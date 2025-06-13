@@ -1,0 +1,11 @@
+h1{
+    color: orange;
+}
+p{
+    color: #fff; /*Shorthand version of #ffffff */
+    background-color: black;
+}
+button{
+    color: white;
+    background-color: blue;
+}

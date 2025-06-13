@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 2</title>
+</head>
+<body>
+    <h1>Form 1</h1>
+    <form action="/action">
+    <div>
+        <label for="username">Enter Username : </label>
+        <input type="text" placeholder="username" id="username" name="user">
+    </div> 
+    <div>
+        <label for="password">Enter Password : </label>
+        <input type="password" placeholder="Password" id="password" name="password">
+    </div>
+    <!--Checkboxes-->
+    <input type="checkbox" id="age" name="age" >
+    <label for="age">I am 18+</label>
+
+
+    <!--Radios-->
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+    <br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
+
+    <!--Dropdowns-->
+    <div>
+        Choose your Profession : 
+        <select name="profession" id="profession">
+            <option>Select your Option</option>
+            <option value="stu">Student</option>
+            <option value="dev">Developer</option>
+            <option value="Buisnessman">Buisnessman</option>
+            <option value="Influencer">Influencer</option>
+        </select>
+    </div>
+
+    <!--Ranges-->
+    <label for="vol">Set Volume</label>
+    <input type="range" id="vol" min="0" max="100" name="vol" value="70">
+
+    <!--Text Area-->
+    <br>
+    <label for="feedback">Write feedback : </label>
+    <textarea name="feedback" id="feedback"> </textarea>
+
+    <button>Submit</button>
+    <button type="reset"> Reset</button>
+    </form>
+</body>
+</html>

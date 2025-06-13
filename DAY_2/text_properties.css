@@ -1,0 +1,15 @@
+h1{
+    text-align: center;
+    text-decoration: wavy blue underline;
+    letter-spacing: 15px;
+}
+p{
+    font-weight: normal;
+    line-height: 1.5;
+}
+h3{
+    text-decoration: aqua overline;
+}
+h2{
+    text-decoration: red line-through;
+}
