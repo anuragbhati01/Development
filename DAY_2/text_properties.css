@@ -2,10 +2,13 @@ h1{
     text-align: center;
     text-decoration: wavy blue underline;
     letter-spacing: 15px;
+    font-family: didot;
+    font-weight: 200;
 }
 p{
     font-weight: normal;
     line-height: 1.5;
+    font-size: normal;
 }
 h3{
     text-decoration: aqua overline;
