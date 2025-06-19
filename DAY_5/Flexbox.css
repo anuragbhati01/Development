@@ -1,0 +1,49 @@
+h1{
+    text-align: center;
+}
+#mdiv{
+    border: 2px solid black;
+    height: 300px;
+    width: 80%;
+    background-color: aliceblue;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row;   
+    /* justify-content: flex-end; */
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly; */
+    justify-content: flex-start;
+    /* flex-wrap: nowrap;   Seted default */
+    flex-wrap: wrap-reverse;
+}
+#blue{
+    background-color: blue;
+}
+#red{
+    background-color: red;
+}
+#black{
+    background-color: black;
+}
+#green{
+    background-color: green;
+}
+#yellow{
+    background-color: yellow;
+    color: darkred !important;
+}
+#violet{
+    background-color: violet;
+}
+#orange{
+    background-color: orange;
+}
+
+#mdiv div{
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    height: 100px;
+    width: 300px;
+
+}

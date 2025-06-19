@@ -1,0 +1,33 @@
+h1{
+    text-align: center;
+    background-color: beige;
+    border: 2px dotted navy;
+}
+div{
+    height: 200px;
+    width: 200px;
+    background-color: aquamarine;
+    border: 2px solid black;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px black;
+    margin: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+#box1{
+    position: relative;
+    top: 50px;
+    z-index: 1;
+}
+#box2{
+    background-color: blanchedalmond;
+    position: relative;
+    z-index: 2;
+}
+#box3{
+    background-color: azure;
+    position: relative;
+    bottom: 50px;
+    z-index: 3;
+}

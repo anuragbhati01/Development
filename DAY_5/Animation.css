@@ -1,0 +1,48 @@
+h1{
+    text-align: center;
+    font-family: 'Trebuchet MS';
+}
+.box{
+    height: 200px;
+    width: 300px;
+    background-color: violet;
+    border: 2px solid brown;
+    border-radius: 15px;
+    display: grid;
+    place-items: center;
+
+
+    animation-name: fontanimation;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 4;
+    animation-direction: normal;
+
+    animation: coloranimation 2s ease-in 0s 4 normal;
+
+
+}
+
+@keyframes fontanimation{
+    from{ 
+        font-size: 20px;
+    }
+    to{ 
+        font-size: 40px;
+    }
+}
+@keyframes coloranimation{
+    0%{
+        background-color: violet;
+        border-radius: 10px;
+    }
+    50%{
+        background-color: aqua;
+        border-radius: 35px;
+    }
+    100%{
+        background-color: cornflowerblue;
+        border-radius: 50%;
+    }
+}

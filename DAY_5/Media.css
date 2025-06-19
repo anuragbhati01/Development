@@ -1,0 +1,35 @@
+h1{
+    background-color: yellow;
+    border: 2px solid black;
+}
+h2{
+    background-color: violet;
+    border: 2px solid purple;
+}
+
+/* @media(min-width: 400px){
+    h1{
+        background-color: aquamarine;
+        height: 200px;
+    }
+} */
+@media(max-width:400px){
+    h2{
+        background-color: navy;
+        height: 200px;
+        color: white;
+    }
+}
+@media(min-width: 200px) and (max-width: 300px){
+    h1{
+        background-color: red;
+        color: white;
+    }
+}
+@media(orientation: landscape){
+    h1{
+        background-color: blanchedalmond;
+        color: rgb(96, 192, 0);
+        border: 4px dashed darkgreen;
+    }
+}
