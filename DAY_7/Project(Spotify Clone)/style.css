@@ -195,17 +195,20 @@ a{
     align-items: center;
 }
 .album{
-    width: 30%;
+    height: 100%;
+    width: 25%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 0.5rem;
 }
 .player{
-    width: 50%;
+    width: 60%;
 }
 .controls{
-    width: 30%;
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .player-control-icon{
     height: 1rem;
@@ -223,8 +226,8 @@ a{
 }
 .playback-bar{
     display: flex;
-    /* justify-content: center;
-    align-items: center; */
+    justify-content: center;
+    align-items: center;
 }
 .progress-bar{
     width: 70%;
@@ -245,30 +248,87 @@ a{
     background-color: #1bd760;
     margin-top: -6px;
 }
-/* Work to be done yet */
-/* .timing{
+.timing{
     font-size: small;
 }
 .photo{
-    padding-left: 0rem;
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 0.5rem;
+    margin-left: 0.4rem;
+    z-index: 3;
+}
+.album-title{
+    font-size: 0.75rem;
+    font-weight: 600;
+    opacity: 0.95;
+    line-height: 1rem;
+}
+.album-info{
+    font-size: 0.55rem;
+    opacity: 0.7;
+    line-height: 1rem;
 }
 .album-icon-1{
-    height: 1.5rem;
-    width: 1.5rem;
-    margin-left: 1rem;
+    height: 1.25rem;
+    opacity: 0.8;
 }
 .album-icon-2{
     height: 1.75rem;
-    width: 1.75rem;
-    margin-left: 1rem;
+    opacity: 0.8;
+    margin-left: 0.6rem;
 }
-.album-title{
-    font-size: 0.8rem;
-    font-weight: 600;
-    padding-left: 1rem;
+.album-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.album-info{
-    font-size: 0.5rem;
+.album-para{
+    position: relative;
+    right: 3rem;
+}
+
+.control-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.control-icons-footer{
+    height: 2rem;
+    margin-right: 1rem;
+}
+#control-icon-big1{
+    height: 1.2rem;
     opacity: 0.7;
-    padding-left: 1rem;
-} */
+    margin-right: 1rem;
+}
+#control-icon-big2{
+    height: 1rem;
+    opacity: 0.7;
+    margin-right: 1rem;
+}
+
+.volume-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.control-bar-volume{
+    appearance: none;
+    width: 50%;
+    background-color: transparent;
+    cursor: pointer;
+}
+.control-bar-volume::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    height: 0.2rem;
+    border-radius: 100px;
+}
+.control-bar-volume::-webkit-slider-thumb{
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    background-color: #1bd760;
+    margin-top: -6px;
+}
