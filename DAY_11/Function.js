@@ -75,7 +75,7 @@ function isAdult(age){
 }
 console.log(isAdult(18));
 
-// Return no. form 1 to n
+// Return Sun of no. from 1 to n
 
 function getSum(n){
     let add = 0;
@@ -98,7 +98,7 @@ function concat(str){
 }
 
 let str = ["hi", "hello", "bye", "thankyou"];
-console.log(concat(str));
+console.log(concat(str));    // hihellobyethankyou
 
 
 // Function Scopes
@@ -169,6 +169,7 @@ multipleGreet(namaste, 2);
 // Higher Order Function (Return function)
 
 function oddOrEvenFactory(request){
+    console.log(`Request is ${request}`);
     if(request == "odd"){
        return function(n) {
             console.log(!(n%2 == 0));
@@ -184,8 +185,8 @@ function oddOrEvenFactory(request){
     }
 }
 
-let fun = oddOrEvenFactory("odd");   // odd, even or any request=
-fun(6);   // request is seted to even  
+let fun = oddOrEvenFactory("odd");   // odd, even or any request
+fun(6);   // request is seted to odd  
 
 console.log("-----------");
 // Methods

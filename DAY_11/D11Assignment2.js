@@ -28,7 +28,7 @@ const object = {
     }
 };
 
-setTimeout(object.logMessage , 1000);   // this gives us undefined because object.logMessage(); () <-- these are missing
+setTimeout(object.logMessage(), 2000); 
 
 // q4
 
@@ -43,4 +43,4 @@ const objectQ4 = {
     }
 };
 
-objectQ4.method(callback, 1, 2);
+objectQ4.method(callback);      // 0
