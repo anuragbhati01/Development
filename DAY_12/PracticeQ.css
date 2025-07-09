@@ -1,0 +1,15 @@
+.box {
+    background-color: pink;
+    border: 2px solid black;
+}
+
+.heading{
+    text-align: center;
+    background-color: antiquewhite;
+    font-family: 'Gill Sans';
+}
+
+#btn{
+    background-color: blue;
+    color: white;
+}

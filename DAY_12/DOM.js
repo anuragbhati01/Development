@@ -37,3 +37,48 @@ let links = document.querySelectorAll(".box a");
 for(let i=0; i<links.length; i++){
     links[i].style.color = "yellow";
 }
+
+
+// Manipulation using classList property
+
+let heading = document.querySelector("h1");
+console.dir(heading.classList);
+
+heading.classList.add("green");
+
+heading.classList.add("underline");
+
+heading.classList.remove("green");
+
+heading.classList.contains("yellow");       // checks class exist or not
+
+heading.classList.toggle("green");     // adds or remove the classes  add --> if not exist, remove --> if exist
+
+console.dir(heading.classList);
+
+let box = document.querySelector(".box");
+
+box.classList.toggle("bluebg");
+
+// Navigation
+
+let h4 = document.querySelector("h4");
+
+console.log(h4.parentElement);
+console.log(h4.children);
+
+console.log(box.children);
+console.log(box.childElementCount);
+
+// Adding Elements in DOM
+
+let newPara = document.createElement("p");
+
+newPara.innerText = "Hi, I am SpiderMan";
+
+let body = document.querySelector("body");
+body.appendChild(newPara);
+
+box.appendChild(newPara);
+
+newPara.append("New Text is Here");

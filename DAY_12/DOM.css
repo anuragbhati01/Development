@@ -2,6 +2,13 @@ body {
   font-family: Arial;
 }
 
+.green{
+  color: green;
+}
+
+.underline{
+  text-decoration: underline red wavy; 
+}
 #mainImg {
   width: 35%;
 }
@@ -12,7 +19,9 @@ body {
   width: 200px;
   padding: 1rem;
 }
-
+.bluebg{
+  background-color: lightblue;
+}
 .boxLink {
   text-decoration: none;
 }
