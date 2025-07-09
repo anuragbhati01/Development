@@ -1,0 +1,14 @@
+body{
+    margin: 0 auto;
+    text-align: center;
+}
+div{
+    border: 2px solid black;
+    height: 10rem;
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+}
