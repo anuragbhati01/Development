@@ -2,11 +2,11 @@ console.log("Hello Brother!");
 
 // Template Literals
 
-let pencilPrice = 10;
-let erasorPrice = 5;
-let output = `The Total Price is : ${pencilPrice+erasorPrice} Ruppees.`;
-// console.log("The Total Price is : " + (pencilPrice + erasorPrice) + " Ruppees.")     // This is without using literals
-console.log(output);
+// let pencilPrice = 10;
+// let erasorPrice = 5;
+// let output = `The Total Price is : ${pencilPrice+erasorPrice} Ruppees.`;
+// // console.log("The Total Price is : " + (pencilPrice + erasorPrice) + " Ruppees.")     // This is without using literals
+// console.log(output);
 
 // Conditional Statements
 
@@ -174,7 +174,7 @@ console.log(output);
 // let firstName = prompt("Enter your name");
 // console.log(firstName);
 
-let firstName = prompt("Enter first name");
-let lastName = prompt("Enter last name");
-let msg = `Welcome ${firstName} ${lastName} !`;
-alert(msg);
+// let firstName = prompt("Enter first name");
+// let lastName = prompt("Enter last name");
+// let msg = `Welcome ${firstName} ${lastName} !`;
+// alert(msg);

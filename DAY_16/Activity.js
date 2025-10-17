@@ -26,7 +26,7 @@ async function getUniversity(country) {
     }
     catch(err){
         console.log(err);
-        return [];
+        return "No country found in our record";
     }
 }
 
