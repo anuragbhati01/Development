@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All users</title>
+    <style>
+                /* Styling the entire table */
+        table {
+        width: 100%; /* Make the table span the full width */
+        border-collapse: collapse; /* Merge cell borders into a single border */
+        margin: 20px 0; /* Add some space above and below the table */
+        }
+
+        /* Styling table headers and data cells */
+        th, td {
+        border: 1px solid #ddd; /* Add a light gray border to cells */
+        padding: 8px; /* Add padding inside cells for better spacing */
+        text-align: left; /* Align text to the left within cells */
+        }
+
+        /* Styling table headers */
+        th {
+        background-color: #f2f2f2; /* Light gray background for headers */
+        font-weight: bold; /* Bold text for headers */
+        }
+
+        /* Styling alternating rows (zebra striping) for better readability */
+        tbody tr:nth-child(even) {
+        background-color: #f9f9f9; /* Slightly different background for even rows */
+        }
+
+        /* Hover effect on table rows */
+        tbody tr:hover {
+        background-color: #e6e6e6; /* Change background on hover */
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Edit Data</th>
+        </tr>
+        <% for(user of users){ %>
+            <tr>
+                <td> <%= user.id %></td>
+                <td> <%= user.username %></td>
+                <td> <%= user.email %></td>
+                <td>
+                    <form method="get" action="/user/<%= user.id %>/edit">
+                        <button>Edit</button>
+                    </form>
+                </td>
+            </tr>
+        <% } %>
+    </table>
+</body>
+</html>
+
