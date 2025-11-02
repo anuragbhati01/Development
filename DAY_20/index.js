@@ -4,6 +4,7 @@ const express = require("express");
 const app = express();
 const path = require("path");
 const methodOverride = require("method-override");
+const { v4: uuidv4 } = require("uuid");
 
 app.use(methodOverride("_method"));
 app.use(express.urlencoded({extended : true}));
@@ -89,6 +90,69 @@ app.patch("/user/:id", (req, res) =>{
         res.send(err);
     }
 })
+
+app.post("/user", (req, res) => {
+    // let { username, email, password } = req.body;
+    res.render("newuser.ejs");
+});
+
+app.post("/user/new", (req, res) => {
+    let { username, email, password } = req.body;
+    let id = uuidv4();
+    let q = `INSERT INTO user (id, username, email, password) VALUES ( '${id}', '${username}', '${email}', '${password}')`;
+    try {
+        connection.query(q, (err, results) => {
+            if(err) throw err;
+            res.redirect("/user");
+        })
+    } catch (error) {
+        res.send(err);
+    }
+});
+
+// Delete data route
+
+app.get("/user/:id/delete", (req, res) => {
+    let { id } = req.params;
+    let q = `SELECT * FROM user WHERE id = '${id}'`;
+    try {
+        connection.query(q, (err, result) => {
+            if(err) throw err;
+            let user = result[0];
+            res.render("delete.ejs", { user });
+        });
+    } catch (error) {
+        res.send(err);
+    }
+});
+
+app.delete("/user/:id/", (req, res) => {
+    let { id } = req.params;
+    let { password } = req.body;
+    let q = `SELECT * FROM user WHERE id = '${id}'`;
+    try {
+        connection.query(q, (err, result) => {
+            if(err) throw err;
+            let user = result[0];
+            
+            if( user.password != password){
+                res.send("wrong password");
+            }
+            else{
+                let q2 = `DELETE FROM user WHERE id = '${id}'`;
+                connection.query(q2, (err, result) => {
+                    if(err) throw err;
+                    else{
+                        console.log("Deleted!")
+                        res.redirect("/user");
+                    }
+                });
+            }
+        });
+    } catch (error) {
+        res.send(err);
+    }
+});
 
 app.listen(3000, ()=>{
     console.log("listening...");

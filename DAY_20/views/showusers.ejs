@@ -43,6 +43,7 @@
             <th>Username</th>
             <th>Email</th>
             <th>Edit Data</th>
+            <th>Delete Data</th>
         </tr>
         <% for(user of users){ %>
             <tr>
@@ -54,9 +55,17 @@
                         <button>Edit</button>
                     </form>
                 </td>
+                <td>
+                    <form action="/user/<%= user.id %>/delete" method="get">
+                        <button>Delete</button>
+                    </form>
+                </td>
             </tr>
         <% } %>
     </table>
+    <form method="post" action="/user">
+        <button>Add new user</button>
+    </form>
 </body>
 </html>
 
