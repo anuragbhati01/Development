@@ -1,0 +1,33 @@
+body{
+    margin-left: 20px;
+}
+.chat{
+    padding: 15px;
+    background-color: aliceblue;
+    border-radius: 16px;
+    display: inline-block;
+}
+.msg{
+    background-color: dodgerblue;
+    color: white;
+    padding: 5px 15px 5px 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 10px;
+}
+.btn{
+    display: flex;
+    background-color: cornflowerblue;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 16px;
+    color: whitesmoke;
+    font-size: 12px;
+    cursor: pointer;
+    gap: 3px;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+}
+.btn:hover{
+    background-color: blue;
+}
